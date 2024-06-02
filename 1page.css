@@ -206,15 +206,15 @@ body {
 }
 
 .customer-quote .image {
-  background-image: url("../img/공모전icon.png"); /* 이미지 경로 설정 */
+  background-image: url("공모전icon.png"); /* 이미지 경로 설정 */
 }
 
 .customer-quote-1 .image {
-  background-image: url("../img/대외활동icon.png"); /* 이미지 경로 설정 */
+  background-image: url("대외활동icon.png"); /* 이미지 경로 설정 */
 }
 
 .customer-quote-2 .image {
-  background-image: url("../img/자격증icon.png"); /* 이미지 경로 설정 */
+  background-image: url("자격증icon.png"); /* 이미지 경로 설정 */
 }
 
 .container-4,
