@@ -1,0 +1,119 @@
+body {
+  display: flex; /* Flexbox 레이아웃 */
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+  height: 100vh; /* 화면 전체 높이 */
+  margin: 0; /* 기본 여백 제거 */
+  font-family: Arial, sans-serif; /* 폰트 설정 */
+  background-color: #fafafa; /* 배경 색상 */
+}
+
+.logo {
+  width: 100%;
+  display: block;
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+.loginBox,
+.signupBox {
+  background: #fff; /* 배경 흰색 */
+  padding: 40px; /* 내부 여백 */
+  border-radius: 10px; /* 둥근 테두리 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  width: 100%;
+  max-width: 400px; /* 최대 너비 */
+}
+
+.loginBox .logo,
+.signupBox .logo {
+  width: 175px; /* 로고 너비 */
+  margin-bottom: 20px; /* 아래 여백 */
+}
+
+.loginForm .inputBox,
+.signupForm input {
+  width: 100%; /* 입력 상자 너비 */
+  padding: 10px; /* 내부 여백 */
+  margin: 10px 0; /* 상하 여백 */
+  border: 1px solid #ccc; /* 테두리 색상 */
+  border-radius: 5px; /* 둥근 테두리 */
+  box-sizing: border-box; /* 박스 크기 계산 방식 */
+}
+
+.loginForm .buttonBox button,
+.signupForm button {
+  width: 100%; /* 버튼 너비 */
+  padding: 10px; /* 내부 여백 */
+  margin-top: 10px; /* 상단 여백 */
+  border: none; /* 테두리 없음 */
+  border-radius: 5px; /* 둥근 테두리 */
+  background-color: #3c4140; /* 배경색 */
+  color: #fff; /* 텍스트 색상 */
+  font-size: 16px; /* 폰트 크기 */
+  cursor: not-allowed; /* 기본 커서 상태 */
+}
+
+.loginForm .buttonBox button:enabled,
+.signupForm button:enabled {
+  cursor: pointer; /* 활성화된 버튼 커서 */
+}
+
+.loginForm .buttonBox button.disabled,
+.signupForm button.disabled {
+  background-color: #a0d1f0; /* 비활성화된 버튼 배경색 */
+}
+
+.loginForm .buttonBox button.enabled,
+.signupForm button.enabled {
+  background-color: #3897f0; /* 활성화된 버튼 배경색 */
+}
+
+.loginBox .orBox,
+.signupBox .orBox {
+  display: flex; /* Flexbox 레이아웃 */
+  align-items: center; /* 수직 정렬 */
+  margin: 20px 0; /* 상하 여백 */
+}
+
+.loginBox .orBox hr,
+.signupBox .orBox hr {
+  flex: 1; /* Flexbox 아이템 확장 */
+  border: none; /* 기본 테두리 제거 */
+  border-top: 1px solid #ccc; /* 상단 테두리 */
+  margin: 0 10px; /* 좌우 여백 */
+}
+
+.loginBox .orBox span,
+.signupBox .orBox span {
+  font-size: 12px; /* 폰트 크기 */
+  color: #999; /* 텍스트 색상 */
+}
+
+.toFacebook a,
+.forgetPw a,
+.toJoin a {
+  color: #3897f0; /* 링크 색상 */
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+.toJoin {
+  margin-top: 20px; /* 상단 여백 */
+}
+
+.policy {
+  font-size: 12px; /* 폰트 크기 */
+  color: #999; /* 텍스트 색상 */
+  margin-top: 20px; /* 상단 여백 */
+  line-height: 1.5; /* 줄 간격 */
+}
+
+.signupForm button.disabled {
+  background-color: #a0d1f0; /* 비활성화된 버튼 배경색 */
+  cursor: not-allowed; /* 비활성화된 커서 */
+}
+
+.signupForm button.enabled {
+  background-color: #3897f0; /* 활성화된 버튼 배경색 */
+  cursor: pointer; /* 활성화된 커서 */
+}

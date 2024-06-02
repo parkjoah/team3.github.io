@@ -1,0 +1,219 @@
+
+/* STYLE */
+
+
+/* 
+BODY 전체 글꼴 추가
+*/
+
+.body {
+    font-family: 'Inter', sans-serif;
+}
+/*홈이동, 커뮤니티, 인사이트, 로그인 이동(action)*/
+.container_p345{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin: 16px;
+    padding: 20px 20px 0 0 ;
+}
+/*컨테이너  */
+.container {
+    display: flex;
+    background-color: #FFFFFF;
+    padding: 24px 64px 20px 0;
+}
+/*사이드바(공모전/대회, 대외활동/ 자격증 칸) 조정  */ 
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 80px 0 0;
+    padding-left: 150px;
+    padding-top: 10px;
+
+}
+/*메뉴아이템,홈이동, 커뮤니티, 인사이트, 로그인 이동(action)*/
+.menu-item {
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+    text-decoration: none;
+}
+
+/* menu-item active 된거 백그라운드 컬러 주기 */ 
+.menu-item.active {
+    background-color: #efefef;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 134px);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding-top: 20PX;
+}
+
+/*search-filter 설정 */ 
+.search-filter {
+    padding-top: 10px;
+    margin-right: 8px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px;
+}
+
+
+/*오른쪽 아이콘들, p345_header_icon 설정 */ 
+.p345_header_icons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 16px;
+    padding: 60px 20px 0 0 ;
+}
+
+
+
+
+
+/* MAIN CONTENT
+ 시작 */
+
+.main-content {
+    display: flex;
+    margin: 0 0 61px 135px;
+    width: 1173px; 
+}
+/* MAIN CONTENT 이미지 */
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    margin-right: 68px;
+}
+
+
+/* MAIN CONTENT list */
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 1700px;
+
+}
+/* MAIN CONTENT, 표상단/ list-header */
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 230px;
+    border-top: 1px solid #E0E0E0;
+}
+
+/* MAIN CONTENT list */
+.list-item {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 15px 0 15px 100px;
+    border-top: 1px solid #E0E0E0; 
+
+}
+/*대외활동 아이콘 설정 */ 
+.icon4,.icon5, .icon6 {
+    width: 150px;
+    height: 150px;
+    margin-left: -250px
+}
+
+
+
+
+
+
+/*page-number
+*/
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    /* This centers the children (page-number elements) horizontally */
+    align-items: center;
+    /* This vertically centers the children if needed */
+    width: 100%;
+    /* Ensures the container takes full width of its parent for better center alignment */
+    margin-top: 8px;
+}
+/*page-number 조정*/
+.page-number {
+    font-size: 20px;
+    font-weight: 600;
+    color: #C0C0C0;
+    margin-right: 16px;   /* Space between page numbers */
+}
+
+
+/*page-number active 컬러 조정*/
+.page-number.active {
+    color: #000000;
+    /* Active page number color */
+}
+
+
+
+
+
+
+
+
+
+
+/*
+ FOOTER 
+ */
+
+/* footer_1 */
+.bg-foot1 {
+    background-color: #a5a5a5;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* footer_1_글씨*/
+  .foot1-item {
+    color: black;
+    font-weight: bold;
+    text-decoration:none;
+    padding-left:12%
+  }
+  /* footer_2_연한회색블럭*/
+  .bg-foot2 {
+    background-color: #d9d9d9;
+    padding-left: 80px;
+    padding-top: 30px;
+  }
+  
+  /* footer_2_DATA COLLECTION 글씨 기울기 적용 */
+  .foot2-DC{ 
+      font-style: italic;
+      font-size: 25px;
+      padding-bottom: 5px;
+  }
+  /*footer_2_나머지 글씨 사이즈*/
+  .foot2-abc{
+    font-size: 15px;
+  }
+  

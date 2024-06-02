@@ -1,0 +1,197 @@
+/* style */
+
+/* body */
+
+
+
+/* 그라데이션 배경 */
+.bg-1 {
+  background: linear-gradient(90deg, #e4fdff 0%, rgba(137, 152, 153, 0.5) 100%);
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 60px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* NAVIGATION 맨위 오른쪽 */
+.nav-bar {
+  display: flex;
+  width: 100%;
+  /* 넓이 100% 기준 */
+  justify-content: flex-end;
+  /* 위치 오른쪽 고정 */
+  padding: 0 30px;
+  /* 공간 추가 위, 오른쪽*/
+  top: 0;
+  text-decoration: none;
+  /* 테스트 데코 제거 */
+}
+
+.menu-items {
+  display: flex;
+  gap: 20px;
+  /* 메뉴 아이템 간의 간격을 20px로 설정 */
+}
+
+.menu-item {
+  color: black;
+  /* 텍스트 색상 검정색으로 변경 */
+  font-weight: bold;
+  /* 텍스트 굵게 */
+  font-size: 18px;
+  /* 텍스트 크기 조정 */
+  text-decoration: none;
+  /* 링크 밑줄 제거 */
+}
+
+
+/* Data Collection 글씨 */
+.data-collection {
+  font-size: 100px;
+  /* 글씨 크기 */
+  font-weight: 750;
+  /* 글씨 두께 고정 */
+  line-height: 1.2;
+  /* 라인 높이 설정 */
+  text-align: left;
+  /* 글씨 위치 왼쪽 */
+  margin-top: 40px;
+  padding-top: 80px;
+  /* 위 배경 공간 */
+  padding-left: 180px;
+  /* 왼쪽 공간 */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  /* 그림자 추가 */
+}
+/* Data Collection 아래 문구 */
+.subtext {
+  font-size: 35px;
+  color: #828282;
+  margin-top: 20px;
+  padding-left: 80px;
+  /* 공간 추가 */
+}
+
+
+/* 여유공간 추가 */
+.additional-space {
+  margin-top: 200px;
+}
+/* 탭 섹션 색상(회색 그라데이션)*/
+.bg-2 {
+  background: linear-gradient(90deg, #d9d9d9 0%, #f5f5f5 100%);
+  border-radius: 50px;
+  height: 108px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+  /* 가운데 정렬 */
+}
+/* 탬 0|0|0 처럼 나누는 세로선 추가 */
+.divider {
+  border-left: 1px solid #ccc; /* 왼쪽에 선 추가, 1px */
+  height: 40px;
+  margin: 0 20px;
+}
+/* 탭 (회색 박스) 속 글 */
+.tab-text {
+  font-size: 30px;
+  font-weight: 600;/* 두께 조정 */
+  padding-top: 10px;
+  color: #404040;
+}
+
+/* slide dots  오른쪽 중간에 ooooo만들기 */
+.slider-dots {
+  display: flex;
+  justify-content: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 40px;
+  gap: 7px;
+  
+}
+/* 도트들 각각의 형태 */
+.slider-dots .dot {
+  width: 10px;
+  height: 10px;
+  background-color: #999999;
+  border-radius: 50%;
+  padding: 0 5px;
+  transition: background-color 0.3s;
+}
+/* 엑티브 도트 형태 */
+.slider-dots .dot.active {
+  background-color: #c8f7ff;
+}
+
+
+
+/* main_container - 관련 교육 모음 */
+.program{
+  margin-left: 50px;
+}
+/* 관련 교육 모음 텍스트 */
+.main_cont_txt{
+  font-size: 25px;
+  font-weight: 600;
+  padding:5px 0 0 50px;
+}
+.program_img{
+border-radius: 3%;
+}
+
+/* 교육이름 텍스트 */
+.main_cont_sub_text{
+  font-size: 20px;
+}
+/* #텍스트 */
+.main_cont_sub_text_2{
+  font-size: 15px;
+}
+/* 댓글 갯수 텍스트 */
+.main_cont_like_num{
+  font-size: 13px;
+  padding-left: 3px; /* 위치조정 */
+}
+
+
+
+/*
+ FOOTER 
+ */
+
+/* footer_1 */
+.bg-foot1 {
+  background-color: #a5a5a5;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* footer_1_글씨*/
+.foot1-item {
+  color: black;
+  font-weight: bold;
+  text-decoration:none;
+  padding-left:12%
+}
+/* footer_2_연한회색블럭*/
+.bg-foot2 {
+  background-color: #d9d9d9;
+  padding-left: 80px;
+  padding-top: 30px;
+}
+
+/* footer_2_DATA COLLECTION 글씨 기울기 적용 */
+.foot2-DC{ 
+    font-style: italic;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+/*footer_2_나머지 글씨 사이즈*/
+.foot2-abc{
+  font-size: 15px;
+}

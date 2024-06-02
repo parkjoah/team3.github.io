@@ -1,0 +1,232 @@
+
+/* STYLE */
+
+
+/* 
+BODY 전체 글꼴 추가
+*/
+body {
+    font-family: "Arial", sans-serif;
+}
+
+
+/* 
+NAVIGATION BAR - 
+DATACOLLECTION만 있음 
+  */
+.navbar {
+    display: flex; 
+    padding: 10px 0 0 30px ; /* 패딩 조정 : 순서대로 위, 오른, 아래, 왼 (시계방향) */
+    font-size: 25px; /* TXT 사이즈 */
+    font-style: italic  /* 글씨체 기울어짐 */
+}
+/* navbar 글씨 CSS */
+.DATACOLLECION_HOME { 
+    color: black;
+    text-decoration: none;  /* 하이퍼링크텍스트 아래있는 선 제거 -> text deco 제거 */
+    padding-top: 40px; 
+    padding-left: 40px; 
+    font-weight: bolder;
+}
+
+
+
+/* 
+footer제외 전체 컨텐츠에 적용함
+*/
+.content {
+    padding-top: 70px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-weight: bold;
+    /* 패딩 넣고, 글씨 두껍게 적용함 */
+}
+
+
+
+/* 
+SECTION1
+- 왼쪽 탭 부분  
+*/
+
+/* 커뮤니티 택스트 조절*/
+.TEXT_COMMUNITY {
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+/* 검색 스크랩  / 나머지 3개 카테고리 사이의 공간 넣어줌*/
+.CATEGORY{
+    padding-bottom: 30px;
+}
+
+
+
+/* 
+영역 세개로 구분해주는 세로선 0 | 0 | 0 이렇게!
+ */
+.border-l {
+    border-left: 1px solid #e0e0e0;     /* 왼쪽에 1px짜리 하나 */
+    border-right: 1px solid #e0e0e0;    /* 오른쪽에 1px짜리 하나 */
+    height: 100%;                         /* 세로선을 전체 높이로 설정 */
+}
+
+
+
+
+/* 
+SECTION2 - POST 피드 부분 
+*/
+
+/* 대외활동HEADER */
+.HEADER_ACTIVITY {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px; /* 아래 공간 30PX */
+}
+
+/* 각각의 피드 1개 구성 */
+.post-container {
+    margin-left: 20px;    /* 왼쪽에 공간 추가 */
+    border-bottom: 1px solid #e0e0e0; /* 중앙 부분 피드 아래마다 있는 가로선임 */
+    width: 95%; /* 넓이 */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* POST-프로필(사진_이름_올린시간 묶음)*/
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+/*POST-프로필(사진 사각->원형)*/
+.profile-img{
+    border-radius: 50%; 
+}
+/*POST-프로필(올린시간 글짜 색-회색으로 변경)*/
+.text_hour{
+    color: grey;
+}
+/* POST-프로필-글씨=위치조절 EX) 가을 / 3 min ago */
+.post-header-text {
+    margin-left: 10px;
+    padding-top: 10px;
+}
+/* POST-내용(글) 위치 조절*/
+.post_text {
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+/*글쓰기 버튼 : 위에 공간추가, 오른쪽으로 붙이기*/
+.button {
+    padding-top: 10px; 
+    text-align: end; 
+    /
+}
+
+/*  */
+/* SECTION3 */
+/* 대외활동 */
+
+/* 아래에 여백 추가하기*/
+.space_b {
+    margin-bottom: 50px;
+}
+
+/*채팅 컨테이너*/
+.chat-container {
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*실시간 TALK 글씨 및 아래에 여백 추가*/
+.txt_talk {
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+/*채팅 버블 조절*/
+.chat-bubble {
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    max-width: 80%;
+}
+
+/*보낸채팅_검정색에 흰색글씨_ 오른쪽에 붙이기 */
+.chat-bubble.sent {
+    background-color: #000;
+    color: #fff;
+    align-self: flex-end;
+}
+/*받은채팅_연회색에 검정글씨_ 왼쪽에 붙이기 */
+.chat-bubble.received {
+    background-color: #e9e9eb;
+    color: #000;
+    align-self: flex-start;
+}
+/*채팅 입력창*/
+.input.form-control {
+    border-radius: 20px;
+    padding: 10px;
+}
+/*전송버튼*/
+.input-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+ FOOTER 
+ */
+
+/* footer_1 */
+.bg-foot1 {
+    background-color: #a5a5a5;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* footer_1_글씨*/
+  .foot1-item {
+    color: black;
+    font-weight: bold;
+    text-decoration:none;
+    padding-left:12%
+  }
+  /* footer_2_연한회색블럭*/
+  .bg-foot2 {
+    background-color: #d9d9d9;
+    padding-left: 80px;
+    padding-top: 30px;
+  }
+  
+  /* footer_2_DATA COLLECTION 글씨 기울기 적용 */
+  .foot2-DC{ 
+      font-style: italic;
+      font-size: 25px;
+      padding-bottom: 5px;
+  }
+  /*footer_2_나머지 글씨 사이즈*/
+  .foot2-abc{
+    font-size: 15px;
+  }
+  
