@@ -1,0 +1,421 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.home-p-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 30px 0 60px 0; /* 상하 여백을 40px로 설정 */
+  background: linear-gradient(90deg, #e4fdff 0%, rgba(137, 152, 153, 0.5) 100%);
+}
+
+.home-p-2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 20px 0; /* 상하 여백을 40px로 설정 */
+}
+
+.bg-1 {
+  background: linear-gradient(90deg, #e4fdff 0%, rgba(137, 152, 153, 0.5) 100%);
+}
+
+.navigation {
+  background-color: white; /* 네비게이션 배경색 */
+  margin-bottom: 5px; /* 네비게이션과 캐러셀 사이의 여백을 넓힘 */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 1px; /* 네비게이션 바에 좌우 여백 추가 */
+}
+
+.navigation .container {
+  display: flex;
+  justify-content: space-between; /* 왼쪽과 오른쪽 끝으로 정렬 */
+  align-items: center; /* 수직 중앙 정렬 */
+}
+
+.menu-items {
+  display: flex;
+  gap: 20px; /* 메뉴 아이템 간의 간격을 20px로 설정 */
+}
+
+.nav-title {
+  color: black; /* 텍스트 색상 검정색으로 변경 */
+  font-weight: bold; /* 텍스트 굵게 */
+  font-size: 25px; /* 텍스트 크기 조정 */
+  margin-right: auto; /* 오른쪽 마진을 자동으로 설정하여 왼쪽으로 이동 */
+  padding-left: 5px; /* 왼쪽 패딩 추가 */
+  font-style: italic;
+  color: black;
+}
+
+.menu-item {
+  color: black; /* 텍스트 색상 검정색으로 변경 */
+  font-weight: bold; /* 텍스트 굵게 */
+  font-size: 18px; /* 텍스트 크기 조정 */
+  text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  background-color: white; /* 캐러셀 배경색 */
+  overflow: hidden;
+}
+
+.carousel-inner {
+  background: none; /* 배경색 제거 */
+  min-height: 300px; /* 원하는 높이로 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .item {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px; /* 원하는 높이로 설정 */
+}
+
+.carousel .item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: contain;
+  margin: auto; /* 이미지를 중앙에 배치 */
+}
+.carousel-control.left,
+.carousel-control.right {
+  background: none !important; /* 배경 이미지를 제거 */
+  filter: none !important; /* 필터를 제거 */
+  opacity: 1; /* 불투명도 설정 */
+  z-index: 1000; /* 화살표가 다른 요소보다 위에 오도록 설정 */
+  width: 5%; /* 화살표 영역 너비 조정 */
+}
+
+.carousel-control.left {
+  left: 0;
+}
+
+.carousel-control.right {
+  right: 0;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+  font-size: 30px; /* 화살표 크기 */
+  color: #000; /* 화살표 색상 */
+  background-color: transparent; /* 화살표 배경을 투명으로 설정 */
+  border: none; /* 테두리 제거 */
+}
+.search-input-container {
+  width: 100%;
+  background-color: #ffffff; /* search-input부터 흰색 배경 적용 */
+  display: flex;
+  justify-content: center;
+}
+
+.search-input-container {
+  width: 100%;
+  background-color: #ffffff; /* search-input부터 흰색 배경 적용 */
+  display: flex;
+  justify-content: center;
+  margin: 10px 0; /* 상하 간격을 줄이기 위해 margin 값을 조정 */
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  margin: 30px 85px 49px 85px;
+  padding: 20.5px 0 20.5px 11px;
+  width: 100%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.search {
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.label {
+  font-size: 20px;
+  line-height: 1.2;
+  color: black;
+}
+
+.cards {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  margin: 0 87px 42.5px 73px;
+  padding: 0 6.5px;
+  width: 100%;
+}
+
+.customer-quote,
+.customer-quote-1,
+.customer-quote-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 350px; /* 너비를 조금 줄임 */
+  height: 330px; /* 높이를 조금 줄임 */
+  background-color: #ffffff;
+  border: 1px solid #f7f7f7;
+  border-radius: 50%; /* 동그랗게 만듦 */
+  box-shadow: -4px 8px 20px 0px rgba(0, 0, 0, 0.1);
+  position: relative; /* 글씨와 이미지를 겹치게 하기 위해 상대 위치로 설정 */
+  margin: 5px; /* 동그라미들 사이의 여백을 줄이기 위해 margin 값을 줄임 */
+}
+
+.customer-quote .image,
+.customer-quote-1 .image,
+.customer-quote-2 .image {
+  width: 80px; /* 이미지 크기를 조정 */
+  height: 80px; /* 이미지 크기를 조정 */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute; /* 이미지 절대 위치로 설정 */
+  top: 50%; /* 수직 중앙 정렬 */
+  left: 50%; /* 수평 중앙 정렬 */
+  transform: translate(-50%, -50%); /* 수평 및 수직 중앙 정렬 */
+}
+
+.customer-quote .image {
+  background-image: url("../img/공모전icon.png"); /* 이미지 경로 설정 */
+}
+
+.customer-quote-1 .image {
+  background-image: url("../img/대외활동icon.png"); /* 이미지 경로 설정 */
+}
+
+.customer-quote-2 .image {
+  background-image: url("../img/자격증icon.png"); /* 이미지 경로 설정 */
+}
+
+.container-4,
+.container-5,
+.container-6 {
+  font-size: 25px;
+  font-weight: bold; /* 텍스트 크기 조정 */
+  position: absolute; /* 텍스트 절대 위치로 설정 */
+  top: 90px; /* 텍스트 위치 조정 */
+  text-align: center; /* 텍스트 중앙 정렬 */
+  width: 100%; /* 텍스트가 박스 전체 너비를 차지하도록 설정 */
+}
+
+.container-10 {
+  font-size: 30px;
+  font-weight: bold;
+  bottom: 0;
+  color: #4d4a4a;
+}
+.line-1,
+.line-2 {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 20px 0;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  margin: 0 104px 40px 104px;
+  width: 100%;
+}
+
+.data-collection {
+  font-size: 23px;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #000000;
+}
+
+.container-7 {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  align-items: flex-start;
+  width: 100%;
+}
+
+.group-5 {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  width: 100%;
+  max-width: 1300px; /* 최대 너비 설정 */
+  gap: 10px; /* 좌우 컨테이너 간격 줄임 */
+}
+
+.left-container {
+  flex: 0 0 600px; /* 크기를 고정 */
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.top-right {
+  display: flex;
+  justify-content: center; /* 중앙 정렬 */
+  margin-bottom: 10px; /* 아래 여백 최소화 */
+}
+
+.bottom-right {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* 좌우 요소 간격 줄임 */
+}
+
+.icon-large {
+  width: 600px;
+  height: 600px;
+}
+
+.icon-wide {
+  width: 700px;
+  height: 300px;
+}
+
+.icon-small {
+  width: 200px;
+  height: 200px;
+}
+
+.talk {
+  font-size: 20px;
+  font-weight: bold;
+}
+.button {
+  padding-top: 10px; /* 글쓰기 버튼 위에 공간 추가 */
+}
+.container-8 {
+  display: flex;
+  justify-content: space-between; /* 좌우로 정렬 */
+  width: 100%;
+  padding: 20px; /* 원하는 여백 설정 */
+}
+
+.chat-container {
+  flex: 0 0 40%; /* 크기를 40%로 고정 */
+  margin-left: 400px; /* 왼쪽 여백 */
+}
+
+.list-card {
+  flex: 0 0 30%; /* 크기를 55%로 고정 */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 중앙 정렬 */
+}
+
+.dctl {
+  width: 100%; /* 이미지의 너비를 조정 */
+  height: auto; /* 이미지의 높이를 자동 조정 */
+}
+
+.chat-bubble {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+  max-width: 80%; /* 채팅 버블 사이의 간격 */
+}
+
+.input-group {
+  margin-top: 10px; /* 입력 그룹의 위쪽 간격 */
+}
+
+.chat-container {
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-bubble.sent {
+  background-color: #000;
+  color: #fff;
+  align-self: flex-end;
+}
+.chat-bubble.received {
+  background-color: #e9e9eb;
+  color: #000;
+  align-self: flex-start;
+}
+.input-group .form-control {
+  border-radius: 20px;
+  padding: 10px;
+}
+.input-group-btn img {
+  width: 24px;
+  height: 24px;
+}
+.space-below {
+  margin-bottom: 50px; /* 추가 여백 */
+}
+
+
+
+/*
+ FOOTER 
+ */
+
+/* footer_1 */
+.bg-foot1 {
+  background-color: #a5a5a5;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* footer_1_글씨*/
+.foot1-item {
+  color: black;
+  font-weight: bold;
+  text-decoration:none;
+  padding-left:12%
+}
+/* footer_2_연한회색블럭*/
+.bg-foot2 {
+  background-color: #d9d9d9;
+  padding-left: 80px;
+  padding-top: 30px;
+}
+
+/* footer_2_DATA COLLECTION 글씨 기울기 적용 */
+.foot2-DC{ 
+    font-style: italic;
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+/*footer_2_나머지 글씨 사이즈*/
+.foot2-abc{
+  font-size: 15px;
+}
