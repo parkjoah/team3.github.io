@@ -206,7 +206,7 @@ body {
 }
 
 .customer-quote .image {
-  background-image: url("공모전icon.png"); /* 이미지 경로 설정 */
+  background-image: "공모전icon.png"; /* 이미지 경로 설정 */
 }
 
 .customer-quote-1 .image {
